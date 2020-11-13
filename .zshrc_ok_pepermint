@@ -167,5 +167,5 @@ alias zmk='xrandr --output LVDS-1 --scale 1.2x1.2'
 
 #dwm
 alias dwc='sudo make clean install'
-alias cdwl='cd ~/dwm/dwm"
+alias cdwl='cd ~/dwm/dwm'
 
