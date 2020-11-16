@@ -17,7 +17,7 @@ suara()
 
 pong()
 {
-    ping 8.8.8.8 -c 1 | awk '/64/{print $7 $8}'
+    ping 8.8.8.8 -c 1 | awk '/64/{print $7 $8}' | sed 's/time/ping/' 
 }    
 
 #Mainloop
