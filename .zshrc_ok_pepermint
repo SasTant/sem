@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 alias yset='sudo xed /home/qyla/.local/lib/python3.6/site-packages/ytsearch/settings.py'
 alias yts='ytsearch search'
 alias ytt='ytsearch'
+
 alias uu='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 alias uc='sudo cli-aptiX'
 alias qs='slock & xset dpms force off' 
@@ -110,9 +111,13 @@ alias cc='clear'
 alias xx='exit'
 alias qq='sudo shutdown -h now'
 alias qr='sudo shutdown -r now'
+
 alias bz='nano ~/.zshrc'
+
 alias ldm='sudo geany /etc/lightdm/lightdm-gtk-greeter.conf'
-alias cmp='compton -c  --shadow-green 1  --shadow-exclude focused=0 -z -o 1 --sw-opti -r 15 -b'
+
+alias cmp='compton --config ~/.compton.conf -c  --shadow-red 1  --shadow-exclude focused=0 -z -o 1 --sw-opti -r 15 -b'
+alias cmk='kill $(pidof compton)'
 
 #conky
 alias kc='kill $(pidof conky)'
@@ -120,6 +125,10 @@ alias ck='conky -d'
 
 alias lnk='links2 -g'
 alias lng='links2 -g google.com'
+
+alias sfg='surf google.com &'
+alias kk1='kill %1'
+alias bb1='bg %1'
 
 alias cem='free -hm'
 alias cep='top -in 3'
@@ -168,4 +177,7 @@ alias zmk='xrandr --output LVDS-1 --scale 1.2x1.2'
 #dwm
 alias dwc='sudo make clean install'
 alias cdwl='cd ~/dwm/dwm'
+alias sdwm='pulseaudio --start; sleep 1 && nitrogen --restore'
+alias csdw='while true; do [[ -n $(pidof bash) ]] || xsetroot -name --; sleep 15; done'
+alias xsdw='sudo xed /usr/bin/statusdwm.sh'
 
