@@ -5,6 +5,11 @@
 JEDA=30 #detik
 
 #Fungsi
+smem()
+{
+    free -mh | awk '/Mem/{print $3 }'
+}
+
 waktu()
 {
     date "+D: %A %d %b | T: %H:%M"
@@ -22,6 +27,6 @@ pong()
 
 #Mainloop
 while true; do
-    xsetroot -name "$(waktu) | V: $(suara) | I: $(pong)"
+    xsetroot -name "$(waktu) | V: $(suara) | I: $(pong) | M: $(smem)"
     sleep $JEDA
 done 
