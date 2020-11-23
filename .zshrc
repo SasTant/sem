@@ -152,14 +152,14 @@ alias hpp='cd ~/.mpyt && ./plylgyut.sh'
 alias mpc='sudo geany ~/.mpyt/gabyut.sh'
 
 # git alias
-alias ggs='git status'
-alias ggl='git log'
-alias gga='git add'
-alias ggr='git remote -v'
-alias gps='git push -u'
-alias gpl='git pull'
-alias ggc='git checkout'
-alias gmit='git commit -m'
+#alias ggs='git status'
+#alias ggl='git log'
+#alias gga='git add'
+#alias ggr='git remote -v'
+#alias gps='git push -u'
+#alias gpl='git pull'
+#alias ggc='git checkout'
+#alias gmit='git commit -m'
  
 # ping
 alias py='ping youtube.com'
