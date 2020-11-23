@@ -128,7 +128,9 @@ alias lng='links2 -g google.com'
 
 alias sfg='surf google.com &'
 alias kk1='kill %1'
+alias kk2='kill %2'
 alias bb1='bg %1'
+alias bb2='bg %2'
 
 alias cem='free -hm'
 alias cep='top -in 3'
@@ -136,6 +138,7 @@ alias cep='top -in 3'
 #sort based on time modif
 alias lss='ls -t'
 
+alias lsaa='ls -a'
 alias mpa='mpv --no-vid'
 
 alias fyt='firefox youtube.com'
