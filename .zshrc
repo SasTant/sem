@@ -8,8 +8,10 @@ export ZSH="/home/qyla/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="funky"
-ZSH_THEME="ys"
+ZSH_THEME="blinks"
+#ZSH_THEME="ys"
+#ZSH_THEME='darkblood'
+#ZSH_THEME='mortalscumbag'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -59,7 +61,7 @@ ENABLE_CORRECTION="true"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+ HIST_STAMPS="dd.mm.yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -112,7 +114,8 @@ alias xx='exit'
 alias qq='sudo shutdown -h now'
 alias qr='sudo shutdown -r now'
 
-alias bz='nano ~/.zshrc'
+alias bz='vim ~/.zshrc'
+alias zz='echo $?'
 
 alias ldm='sudo geany /etc/lightdm/lightdm-gtk-greeter.conf'
 
@@ -124,7 +127,7 @@ alias kc='kill $(pidof conky)'
 alias ck='conky -d'
 
 alias lnk='links2 -g'
-alias lng='links2 -g google.com'
+alias lng='links2 -g duckduckgo.com'
 
 alias sfg='surf google.com &'
 alias kk1='kill %1'
@@ -182,5 +185,5 @@ alias dwc='sudo make clean install'
 alias cdwl='cd ~/dwm/dwm'
 alias sdwm='pulseaudio --start; sleep 1 && nitrogen --restore'
 alias csdw='while true; do [[ -n $(pidof bash) ]] || xsetroot -name --; sleep 15; done'
-alias xsdw='sudo xed /usr/bin/statusdwm.sh'
-
+alias vsdw='vim ~/statusdwm.sh'
+alias stdw='cd ~ && ./statusdwm.sh > /dev/null'

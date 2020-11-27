@@ -66,7 +66,7 @@ set nocp
 syntax on
 set nowrap
 set encoding=utf-8
-set noswap
+set noswapfile
 "set relative numbering
 set rnu!
 "autocomplete
