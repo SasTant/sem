@@ -15,7 +15,7 @@ read cpu2 a2 b2 c2 d2 e2 f2 g2 abai < /proc/stat
 prevtotal=$((a+b+c+e+f+g))
 total=$((a2+b2+c2+e2+f2+g2))
 cpu=$((total-prevtotal ))
-cpu=$(( 2 * cpu   ))
+#cpu=$(( 2 * cpu   ))
 echo "CPU: $cpu %"
 }
 
@@ -26,7 +26,7 @@ smem()
 
 waktu()
 {
-    date "+D: %A %d %b | T: %H:%M"
+    date "+D: %A %d %b --- T: %H:%M"
 }
 
 suara()
@@ -41,12 +41,12 @@ pong()
 
 statok()
 {
-	echo "$(waktu) | V: $(suara) | I: $(pong) | M: $(smem) | $(cpur)"
+	echo "$(waktu) ---  V: $(suara) --- I: $(pong) --- M: $(smem) --- $(cpur)"
 }
 
 statvol()
 {
-	echo "----------!!! LOUD VOL !!!-----------|$(waktu) | $(suara) | I: $(pong) | M: $(smem) | $(cpur)" 
+	echo "-----!!! LOUD VOL !!!-----| $(statok)" 
 }
 
 
