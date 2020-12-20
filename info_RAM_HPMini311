@@ -1,0 +1,53 @@
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
+SMBIOS 2.6 present.
+
+Handle 0x000D, DMI type 16, 15 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 3 GB
+	Error Information Handle: No Error
+	Number Of Devices: 2
+
+Handle 0x000E, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: 0x000F
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 1024 MB
+	Form Factor: DIMM
+	Set: None
+	Locator: Bottom - Slot 1 (top)
+	Bank Locator: BANK 0
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1066 MT/s
+	Manufacturer: Samsung
+	Serial Number: 0x00000000
+	Asset Tag: Unknown
+	Part Number: M471B2873EH1-C7  
+	Rank: Unknown
+
+Handle 0x0011, DMI type 17, 28 bytes
+Memory Device
+	Array Handle: 0x000D
+	Error Information Handle: Not Provided
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: J3MY
+	Bank Locator: CHAN B DIMM 0
+	Type: Unknown
+	Type Detail: None
+	Speed: Unknown
+	Manufacturer: NO DIMM
+	Serial Number: NO DIMM
+	Asset Tag: NO DIMM
+	Part Number: NO DIMM
+	Rank: Unknown
+
