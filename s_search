@@ -1,0 +1,11 @@
+#!/bin/bash
+
+input=$(echo | rofi -dmenu -i -scroll-method 1 -p ' search') 
+
+if [[ -n "$input" ]]
+then
+#	if [ "$BROWSER" == "" ]; then 
+	BROWSER='qutebrowser'; fi
+#	$BROWSER "https://dudkduckgo.com/?q=$input&ia=web" &
+	$BROWSER "google.com/search?q=$input" &
+
